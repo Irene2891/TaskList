@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task App</title>
+    <link rel="stylesheet" href="./taskApp.css">
+</head>
+<body>
+    <div class="app">
+        <div>
+        <h4>Task List</h4>
+        <input id="taskInput" type="text" placeholder="Add a task...">
+        <button id="addButton">Add Task</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <div id="task-modal" class="modal close">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Edit Added Task</h4>
+            <button class="close-button" id="close-modal">&times;</button>   
+       
+            </div>
+        <div>
+            <textarea
+              name=""
+              id=""
+              class="edit-input"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="btn-box">
+            <button id="save-edit-button">Save Edited Changes...</button>
+          </div>
+        </div>
+    </div>
+    <script src="./task-app.js"></script>
+</body>
+</html>
